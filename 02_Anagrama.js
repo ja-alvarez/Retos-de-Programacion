@@ -14,13 +14,23 @@ const anagrama = (str1, str2) => {
         return false
     }
     return str1.split('').sort().join('') === str2.split('').sort().join('')
-    // let string1 = str1.split('').sort().join('');
-    // let string2 = str2.split('').sort().join('');
-    // if (string1 != string2) {
-    //     return false
-    // } else {
-    //     return true
-    // }
 };
 
 console.log(anagrama('word1', 'word2'))
+
+
+/* const anagrama = (str1, str2) => {
+    str1 = str1.toLowerCase();
+    str2 = str2.toLowerCase();
+    if ((str1 === str2) || (str1.length !== str2.length)) {
+        return false
+    }
+    let string1 = str1.split('').sort().join('');
+    let string2 = str2.split('').sort().join('');
+    if (string1 != string2) {
+        return false
+    } else {
+        return true
+    }
+};
+console.log(anagrama('word1', 'word2')) */
