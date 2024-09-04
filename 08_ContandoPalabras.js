@@ -21,7 +21,11 @@ const contarPalabras = (str) => {
             }
         }
     }
-    return palabras
+
+    for (const [key, value] of Object.entries(palabras)) {
+        console.log(`${key}: se ha repetido ${value} ${value === 1 ? 'vez' : 'veces'}`);
+    }
+    // return palabras
 };
 
 console.log(contarPalabras('"El sol brilla en el cielo azul. El cielo es brillante y el sol es cálido. Brilla el sol y el cielo está claro."'))
