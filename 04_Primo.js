@@ -13,6 +13,6 @@ const primo = (n) => {
     } else {
         return false
     }
-}
+};
 
-console.log(primo(17))
+console.log(primo(17));

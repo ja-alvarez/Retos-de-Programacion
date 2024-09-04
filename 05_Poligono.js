@@ -20,7 +20,7 @@ const areaPoligono = (figura, parametros) => {
             break;
     }
     console.log(`Área ${figura}: ${area}`)
-}
+};
 
 areaPoligono('Triangulo', { base: 5, altura: 10 });
 areaPoligono('Cuadrado', { lado: 4 });
